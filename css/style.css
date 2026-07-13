@@ -3229,3 +3229,25 @@ form .check-block label{
 #office{
 	display: block;
 }
+
+
+    .stars {
+      display: inline-block;
+      font-size: 2rem;
+      color: #ccc;
+      position: relative;
+    }
+    .stars::before {
+      content: "★★★★★"; /* 5 empty stars */
+      letter-spacing: 3px;
+    }
+    .stars::after {
+      content: "★★★★★"; /* 5 filled stars */
+      letter-spacing: 3px;
+      color: gold;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: var(--rating);
+      overflow: hidden;
+    }
